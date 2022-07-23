@@ -21,4 +21,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('tags', TagController::class);
 Route::apiResource('categories', CategoryController::class);
-Route::get('ads/{user:id}', [AdvertisementController::class, 'index']);
+Route::get('ads/{user:id?}', [AdvertisementController::class, 'index']);

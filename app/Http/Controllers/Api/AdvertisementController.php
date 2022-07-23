@@ -15,7 +15,7 @@ class AdvertisementController extends Controller
      *
      * @return JsonResponse
      */
-    public function index($user_id): JsonResponse
+    public function index($user_id = null): JsonResponse
     {
         return ApiResponder::handleResources(
             Advertisement::query()
